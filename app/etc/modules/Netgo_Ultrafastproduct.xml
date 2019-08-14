@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Ultra Fast Product Extension ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_Prohistory
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+-->
+<config>
+  <modules>
+    <Netgo_Ultrafastproduct>
+      <active>true</active>
+      <codePool>community</codePool>
+      <version>0.0.9</version>
+    </Netgo_Ultrafastproduct>
+  </modules>
+</config>

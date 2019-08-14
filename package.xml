@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Netgo_Ultrafastproduct</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Allows auto filling of the product details</summary>
+    <description>This extension is exclusively for the process of entry of details of any products from the back-end with similar values of the attributes by the method of auto fill. This totally implies on auto fill of similar values of the attributes of various products. For this we have given a section at the back-end to fill the details of product/attributes just once,which is to be repeated and after filling desired attribute, you need not to write them again in individual products.&#xD;
+&#xD;
+With this auto-fill method, entry of details of products will become too easy.Thus reducing the time and hard work for entry of details of any product. </description>
+    <notes>First Preview Release</notes>
+    <authors><author><name>Vipin</name><user>Netgo</user><email>77vips@gmail.com</email></author></authors>
+    <date>2015-07-22</date>
+    <time>04:15:38</time>
+    <contents><target name="magecommunity"><dir name="Netgo"><dir name="Ultrafastproduct"><dir name="Helper"><file name="Data.php" hash="29eb738b6ba82de0b8c967d462146c73"/></dir><dir name="Model"><dir name="Attributes"><file name="Stockavail.php" hash="9fec0955719e4de24c24ce4adc417c4b"/><file name="Visibility.php" hash="86ebd9700d643965812e6202f1867160"/></dir><file name="Observer.php" hash="ea46f51846763d8ac1fc1143a4505c68"/></dir><dir name="etc"><file name="adminhtml.xml" hash="15a38dad7639915df6811bb116bb71fd"/><file name="config.xml" hash="d6dd8e83bcd96e8733338faefe9c1b84"/><file name="system.xml" hash="80487eba9b30143eec1a08a7399c0ffb"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Netgo_Ultrafastproduct.xml" hash="ced1ff3644a42580e7d95267909c47db"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

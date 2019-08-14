@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Ultra Fast Product Extension ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_Prohistory
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+-->
+<config> 
+	  <tabs>
+        <netgo translate="label" module="ultrafastproduct">
+            <label>Netgo</label>
+            <sort_order>2000</sort_order>
+        </netgo>
+	</tabs>
+	  <sections>
+		<ufp_settings  translate="label" module="ultrafastproduct">                    
+		<label>Ultra Fast Product</label>
+		<tab>netgo</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>770</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <ufpset_general translate="label"> 
+
+					  <label>Enable/Disable Module</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <active translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Enable Module</comment>
+                          </active>
+ 
+					   </fields>
+
+					   </ufpset_general>
+			<ufpset_settings translate="label"> 
+
+			  <label>General Settings</label>
+			  <frontend_type>text</frontend_type>
+			  <sort_order>1</sort_order>
+			  <show_in_default>1</show_in_default>
+			  <show_in_website>1</show_in_website>
+			  <show_in_store>1</show_in_store>
+			<fields>
+
+             <NAME translate="label comment">
+              <label>Name</label>
+              <comment>
+                <![CDATA[Name of the product 
+                ]]>
+              </comment>
+              <frontend_type>Text</frontend_type>
+              <sort_order>1</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+	      
+            </NAME>
+
+			<DESCRIPTION translate="label comment">
+              <label>Description</label>
+              <comment>
+                <![CDATA[Detail Description of the product]]>
+              </comment>
+              <frontend_type>Text</frontend_type>
+              <sort_order>2</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+	     
+            </DESCRIPTION>
+
+          <SHORTDESC translate="label comment">
+              <label>Short Description</label>
+              <comment>
+                <![CDATA[Short Description</span>]]>
+              </comment>
+              <frontend_type>Text</frontend_type>
+              <sort_order>3</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </SHORTDESC>
+
+         <SKU translate="label comment">
+              <label>Sku(start with)</label>
+              <comment>
+                <![CDATA[Enter sku name here, it should not contatin space 
+               ]]>
+              </comment>
+              <frontend_type>Text</frontend_type>
+              <sort_order>4</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </SKU>
+
+         <WEIGHT translate="label comment">
+              <label>Weight</label>
+              <frontend_type>Text</frontend_type>
+              <sort_order>5</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </WEIGHT>
+            
+			<STATUS translate="label">
+				<label>Status</label>
+				<frontend_type>select</frontend_type>
+				<source_model>adminhtml/system_config_source_enabledisable</source_model>
+				<sort_order>6</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>0</show_in_store>
+			</STATUS>
+
+         
+          <CUSVISIBILITY translate="label">
+					<label>Visibility</label>
+					<frontend_type>select</frontend_type>
+					<source_model>ultrafastproduct/attributes_visibility</source_model>
+					<sort_order>7</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>0</show_in_store>
+		  </CUSVISIBILITY>
+			</fields>
+			</ufpset_settings>
+        
+	 <ufpset_prices translate="label"> 
+			<label>Prices</label>
+			<frontend_type>text</frontend_type>
+			<sort_order>2</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<fields>
+		    <PRICE translate="label comment">
+              <label>Price</label>
+              <frontend_type>Text</frontend_type>
+              <sort_order>6</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </PRICE>
+
+		 <SPLPRICE translate="label comment">
+              <label>Special Price</label>
+               
+              <frontend_type>Text</frontend_type>
+              <sort_order>7</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </SPLPRICE>
+
+			<TAX translate="label">
+				<label>Tax Class</label>
+				<frontend_type>select</frontend_type>
+				<source_model>adminhtml/system_config_source_shipping_taxclass</source_model>
+				<sort_order>11</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>0</show_in_store>
+			</TAX>
+
+			</fields>
+		</ufpset_prices>		   
+				
+   
+				
+
+
+
+	 <ufpset_metadata translate="label"> 
+			<label>Meta Information</label>
+			<frontend_type>text</frontend_type>
+			<sort_order>3</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<fields>
+				<METATITLE translate="label">
+				<label>Meta Title</label>
+				<frontend_type>text</frontend_type>
+				<sort_order>1</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+				</METATITLE>
+				<METAKEYWORD translate="label">
+				<label>Meta Keyword</label>
+				<frontend_type>text</frontend_type>
+				<sort_order>2</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+				</METAKEYWORD>
+				<METADESCRIPTION translate="label">
+				<label>Meta Description</label>
+				<frontend_type>text</frontend_type>
+				<sort_order>3</sort_order>
+				<show_in_default>1</show_in_default>
+				<show_in_website>1</show_in_website>
+				<show_in_store>1</show_in_store>
+				</METADESCRIPTION>
+
+			</fields>
+		</ufpset_metadata>
+ <ufpset_inventory translate="label"> 
+			<label>Inventory</label>
+			<frontend_type>text</frontend_type>
+			<sort_order>4</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<fields>
+				<QTY translate="label comment">
+				  <label>Quantity</label>
+				  <frontend_type>Text</frontend_type>
+				  <sort_order>8</sort_order>
+				  <show_in_default>1</show_in_default>
+				  <show_in_website>1</show_in_website>
+				  <show_in_store>1</show_in_store>
+				</QTY>
+
+				<STOCKAVAIL translate="label">
+					<label>Stock availability</label>
+					<frontend_type>select</frontend_type>
+					<source_model>ultrafastproduct/attributes_stockavail</source_model>
+					<sort_order>13</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>0</show_in_store>
+				</STOCKAVAIL>
+			</fields>
+		</ufpset_inventory>		
+
+
+					</groups>
+		</ufp_settings>
+	  </sections>
+</config>

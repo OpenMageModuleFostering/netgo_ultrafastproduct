@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+/***************************************
+ *** Ultra Fast Product Extension ***
+ ***************************************
+ *
+ * @copyright   Copyright (c) 2015
+ * @company     NetAttingo Technologies
+ * @package     Netgo_Prohistory
+ * @author 		Vipin
+ * @dev			77vips@gmail.com
+ *
+ */
+-->
+<config>
+  <modules>
+    <Netgo_Ultrafastproduct>
+      <version>0.0.9</version>
+    </Netgo_Ultrafastproduct>
+  </modules>
+  <global>
+    <helpers>
+      <ultrafastproduct>
+        <class>Netgo_Ultrafastproduct_Helper</class>
+      </ultrafastproduct>
+    </helpers> 
+    <events>
+	  <catalog_product_new_action> <!-- identifier of the event we want to catch -->
+        <observers>
+          <ultrafast_product_new_action_handler> <!-- identifier of the event handler -->
+            <type>model</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>Netgo_Ultrafastproduct_Model_Observer</class> <!-- observers class alias -->
+            <method>initProduct</method>  <!-- observer's method to be called -->
+            <args></args> <!-- additional arguments passed to observer -->
+          </ultrafast_product_new_action_handler>
+        </observers>
+      </catalog_product_new_action>
+    </events> 
+	<models>			
+		<ultrafastproduct> 
+			<class>Netgo_Ultrafastproduct_Model</class>
+		</ultrafastproduct>		
+	</models>
+  </global>
+</config> 

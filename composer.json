@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Netgo_Ultrafastproduct",
+    "name": "OpenMageModuleFostering\/Netgo_Ultrafastproduct",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Allows auto filling of the product details",
     "authors": [
-    {
-        "name": "Vipin",
-        "email": "77vips@gmail.com"
-    }
-],
+        {
+            "name": "Vipin",
+            "email": "77vips@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }

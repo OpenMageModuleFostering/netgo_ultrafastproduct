@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Netgo_Ultrafastproduct",
+    "name": "openmage-module-fostering\/netgo_ultrafastproduct",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Allows auto filling of the product details",
     "authors": [
